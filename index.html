@@ -1,5 +1,6 @@
 <html>
 <head>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
   h1{
@@ -8,8 +9,27 @@
 </style>
 </head>
 <style>
+@media only screen and (max-width: 768px) {
+  li{
+    width:100%;
+  }
+  li button {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+  }
+
+ li button {
+      float: left;
+  }
+  }
+
 body{
   background-image: url("http://i66.tinypic.com/16k8gn5.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
   ul {
       list-style-type: none;
@@ -31,10 +51,8 @@ body{
       text-decoration: none;
   }
 
-  li a:hover:not(.active) {
-      background-color: #111;
-  }
-  li button {
+}
+ li button {
       float: left;
   }
   .button {
@@ -59,7 +77,7 @@ body{
 }
 .button1{
   width: 270px;
-  opacity:0.4;
+  opacity:0.6;
 }
 
 .btn-group .button:hover {
@@ -70,17 +88,17 @@ body{
     padding: 10px;
 }
 
-/* Left and right column */
+
 .column.side {
     width: 35%;
 }
 
-/* Middle column */
+
 .column.middle {
     width: 40%;
 }
 
-/* Clear floats after the columns */
+
 .row:after {
     content: "";
     display: table;
@@ -95,12 +113,13 @@ body{
 
   </style>
   <body>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 <script>
 function myFunction1(){
   document.getElementById("demo1").style.fontSize="60px";
   document.getElementById("demo1").innerHTML= "Hello <br> a bit about me";
   document.getElementById("demo2").innerHTML=
- "I posses new and innovative idea dedication and determination to work able to adopt my self with requirments of organization being a fresher i need platform to explore  my knowledge to get into mood of corporate work culture to test my skills fpr real work enivironment and i have done some projects based on python and attended some 4  hackathons";
+ "I posses new and innovative idea dedication and determination to work able to adopt my self with requirments of organization being a fresher i need platform to explore  my knowledge to get into mood of corporate work culture to test my skills fpr real work enivironment and i have done some projects based on python and attended some 4 hackathons";
 }
 function myFunction() {
     document.getElementById("demo1").style.fontSize="25px";
@@ -111,7 +130,7 @@ function myFunction() {
   <div class="btn-group">
     <ul>
     <li><button class="button button1"  type="button" onclick="myFunction1()" target="_top">About</button></li>
-    <li><button  class="button button1" type="button" onclick="myFunction()" target="_top">Resume</button></li>
+    <li><button class="button button1" type="button" onclick="myFunction()" target="_top">Resume</button></li>
     <li><button class="button button1">Education</button></li>
     <li><button class="button button1">Projects</button></li>
     <li><button class="button button1">Achievments</button></li>
