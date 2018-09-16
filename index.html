@@ -1,5 +1,6 @@
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
   h1{
     font-size:60px;
@@ -95,19 +96,25 @@ body{
   </style>
   <body>
 <script>
+function myFunction1(){
+  document.getElementById("demo1").style.fontSize="60px";
+  document.getElementById("demo1").innerHTML= "Hello <br> a bit about me";
+  document.getElementById("demo2").innerHTML=
+ "I posses new and innovative idea dedication and determination to work able to adopt my self with requirments of organization being a fresher i need platform to explore  my knowledge to get into mood of corporate work culture to test my skills fpr real work enivironment and i have done some projects based on python and attended some 4 hackathons";
+}
 function myFunction() {
     document.getElementById("demo1").style.fontSize="25px";
-    document.getElementById("demo1").innerHTML = Date();
+    document.getElementById("demo1").innerHTML=" ";
+    document.getElementById("demo2").innerHTML=" ";
   }
 </script>
-
   <div class="btn-group">
     <ul>
-    <li><button class="button button1">About</button></li>
+    <li><button class="button button1"  type="button" onclick="myFunction1()" target="_top">About</button></li>
     <li><button  class="button button1" type="button" onclick="myFunction()" target="_top">Resume</button></li>
     <li><button class="button button1">Education</button></li>
     <li><button class="button button1">Projects</button></li>
-    <li><button class="button button1">Projects</button></li>
+    <li><button class="button button1">Achievments</button></li>
   </ul>
   </div>
   <div class="row">
@@ -116,7 +123,9 @@ function myFunction() {
     </div>
     <div class="row">
       <div class="column middle">
-        <h1 id="demo1">Hello,<br>a bit about me:</h1>
+        <h1 id="demo1">Hello <br> a bit about me</h1>
+        <p id="demo2">I posses new and innovative idea dedication and determination to work able to adopt my self with requirments of organization being a fresher i need platform to explore my knowledge to get into mood of corporate work culture to test my skills fpr real work enivironment and i have done some projects based on python and attended some 4 hackathons.
+         </p>
       </div>
 </body>
 </html>
