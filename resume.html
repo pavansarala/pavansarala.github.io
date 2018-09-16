@@ -1,0 +1,122 @@
+<html>
+<head>
+  <style>
+  h1{
+    font-size:60px;
+  }
+</style>
+</head>
+<style>
+body{
+  background-image: url("http://i66.tinypic.com/16k8gn5.jpg");
+}
+  ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+  }
+
+  li {
+      float: left;
+  }
+
+  li button {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+  }
+
+  li a:hover:not(.active) {
+      background-color: #111;
+  }
+  li button {
+      float: left;
+  }
+  .button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+}
+.btn-group .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    float: left;
+}
+.button1{
+  width: 270px;
+  opacity:0.4;
+}
+
+.btn-group .button:hover {
+    background-color: #3e8e41;
+}
+.column {
+    float: left;
+    padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+    width: 35%;
+}
+
+/* Middle column */
+.column.middle {
+    width: 40%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.class1{
+  border-radius: 250px;
+  padding: 100px;
+  width: 250px;
+  height: 250px;
+}
+
+  </style>
+  <body>
+<script>
+function myFunction() {
+    document.getElementById("demo1").style.fontSize="25px";
+    document.getElementById("demo1").innerHTML = Date();
+  }
+</script>
+
+  <div class="btn-group">
+    <ul>
+    <li><button class="button button1">About</button></li>
+    <li><button  class="button button1" type="button" onclick="myFunction()" target="_top">Resume</button></li>
+    <li><button class="button button1">Education</button></li>
+    <li><button class="button button1">Projects</button></li>
+    <li><button class="button button1">Projects</button></li>
+  </ul>
+  </div>
+  <div class="row">
+    <div class="column side">
+      <img class="class1" src="http://i66.tinypic.com/4puijp.jpg">
+    </div>
+    <div class="row">
+      <div class="column middle">
+        <h1 id="demo1">Hello,<br>a bit about me:</h1>
+      </div>
+</body>
+</html>
