@@ -1,4 +1,3 @@
-
 <html>
 <head>
 <meta charset="utf-8">
@@ -10,14 +9,28 @@
 </style>
 </head>
 <style>
-@media only screen and (min-device-width: 400px) {
-  body{
-  background-image: url("http://i66.tinypic.com/4puijp.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+body {
+    background-color: tan;
+    color: black;
 }
-  li{
-    width:100%;
+
+/* On screens that are 992px wide or less, the background color is blue */
+@media screen and (max-width: 992px) {
+    body {
+      background-image: url("http://i66.tinypic.com/16k8gn5.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+  }
+
+}
+
+
+@media screen and (max-width: 600px) {
+    body {
+        background-image: url("http://i66.tinypic.com/16k8gn5.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
   }
   li button {
       display: block;
@@ -30,7 +43,7 @@
  li button {
       float: left;
   }
-  }
+
 
 body{
   background-image: url("http://i66.tinypic.com/16k8gn5.jpg");
@@ -121,25 +134,39 @@ body{
   <body>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <script>
-function myFunction1(){
+function myFunction(){
   document.getElementById("demo1").style.fontSize="60px";
-  document.getElementById("demo1").innerHTML= "Hello <br> a bit about me";
+  document.getElementById("demo1").innerHTML= "Hello, <br> a bit about me";
   document.getElementById("demo2").innerHTML=
- "I posses new and innovative idea dedication and determination to work able to adopt my self with requirments of organization being a fresher i need platform to explore  my knowledge to get into mood of corporate work culture to test my skills fpr real work enivironment and i have done some projects based on python and attended some 4 hackathons";
+  "I posses new and innovative idea dedication and determination to work able to adopt my self with requirments of organization being a fresher i need platform to explore  my knowledge to get into mood of corporate work culture to test my skills fpr real work enivironment and i have done some projects based on python and attended some 4 hackathons";
 }
-function myFunction() {
+function myFunction1() {
     document.getElementById("demo1").style.fontSize="25px";
     document.getElementById("demo1").innerHTML=" ";
-    document.getElementById("demo2").innerHTML=" ";
+    document.getElementById("demo2").innerHTML="Currently Studying in the 3rd year computer Scenice course in the pes institute of thechnology";
+  }
+  function myFunction2(){
+    document.getElementById("demo1").style.fontSize="60px";
+    document.getElementById("demo2").style.fontSize="30px";
+    document.getElementById("demo1").innerHTML= " ";
+    document.getElementById("demo2").innerHTML=
+    "I posses new and innovative idea dedication and determination to work able to adopt my self with requirments of organization being a fresher i need platform to explore  my knowledge to get into mood of corporate work culture to test my skills fpr real work enivironment and i have done some projects based on python and attended some 4 hackathons";
+  }
+  function myFunction3(){
+    document.getElementById("demo1").style.fontSize="60px";
+    document.getElementById("demo2").style.fontSize="30px";
+    document.getElementById("demo1").innerHTML= " ";
+    document.getElementById("demo2").innerHTML=
+    "I posses new and innovative idea dedication and determination to work able to adopt my self with requirments of organization being a fresher i need platform to explore  my knowledge to get into mood of corporate work culture to test my skills fpr real work enivironment and i have done some projects based on python and attended some 4 hackathons";
   }
 </script>
   <div class="btn-group">
     <ul>
-    <li><button class="button button1"  type="button" onclick="myFunction1()" target="_top">About</button></li>
-    <li><button class="button button1" type="button" onclick="myFunction()" target="_top">Resume</button></li>
-    <li><button class="button button1">Education</button></li>
-    <li><button class="button button1">Projects</button></li>
-    <li><button class="button button1">Achievments</button></li>
+    <li><button class="button button1"  type="button" onclick="myFunction()" target="_top">About</button></li>
+    <li><button class="button button1" type="button" onclick="myFunction1()" target="_top">Education</button></li>
+    <li><button class="button button1"  type="button" onclick="myFunction2()" target="_top">Resume</button></li>
+    <li><button class="button button1" type="button" onclick="myFunction()" target="_top" >Projects</button></li>
+    <li><button class="button button1"  type="button" onclick="myFunction3()" target="_top">Achievments</button></li>
   </ul>
   </div>
   <div class="row">
