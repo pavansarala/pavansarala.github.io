@@ -1,183 +1,21 @@
+<!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-  h1{
-    font-size:60px;
-  }
-</style>
-</head>
-<style>
-body {
-    background-color: tan;
-    color: black;
-}
+<body>
 
-/* On screens that are 992px wide or less, the background color is blue */
-@media screen and (max-width: 992px) {
-    body {
-      background-image: url("http://i66.tinypic.com/16k8gn5.jpg");
-      background-repeat: no-repeat;
-      background-size: 100% 100%;
-  }
+<p id="demo"></p>
 
-}
-
-
-@media screen and (max-width: 600px) {
-    body {
-        background-image: url("http://i66.tinypic.com/16k8gn5.jpg");
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-    }
-  }
-  li button {
-      display: block;
-      color: white;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-  }
-
- li button {
-      float: left;
-  }
-
-
-body{
-  background-image: url("http://i66.tinypic.com/16k8gn5.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-  ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background-color: #333;
-  }
-
-  li {
-      float: left;
-  }
-
-  li button {
-      display: block;
-      color: white;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-  }
-
-}
- li button {
-      float: left;
-  }
-  .button {
-  display: inline-block;
-  border-radius: 4px;
-  background-color: #f4511e;
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-}
-.btn-group .button {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-    float: left;
-}
-.button1{
-  width: 270px;
-  opacity:0.6;
-}
-
-.btn-group .button:hover {
-    background-color: #3e8e41;
-}
-.column {
-    float: left;
-    padding: 10px;
-}
-
-
-.column.side {
-    width: 35%;
-}
-
-
-.column.middle {
-    width: 40%;
-}
-
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-.class1{
-  border-radius: 250px;
-  padding: 100px;
-  width: 250px;
-  height: 250px;
-}
-
-  </style>
-  <body>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 <script>
-function myFunction(){
-  document.getElementById("demo1").style.fontSize="60px";
-  document.getElementById("demo1").innerHTML= "Hello, <br> a bit about me";
-  document.getElementById("demo2").innerHTML=
-  "I posses new and innovative idea dedication and determination to work able to adopt my self with requirments of organization being a fresher i need platform to explore  my knowledge to get into mood of corporate work culture to test my skills fpr real work enivironment and i have done some projects based on python and attended some 4 hackathons";
-}
-function myFunction1() {
-    document.getElementById("demo1").style.fontSize="25px";
-    document.getElementById("demo1").innerHTML=" ";
-    document.getElementById("demo2").innerHTML="Currently Studying in the 3rd year computer Scenice course in the pes institute of thechnology";
-  }
-  function myFunction2(){
-    document.getElementById("demo1").style.fontSize="60px";
-    document.getElementById("demo2").style.fontSize="30px";
-    document.getElementById("demo1").innerHTML= " ";
-    document.getElementById("demo2").innerHTML=
-    "I posses new and innovative idea dedication and determination to work able to adopt my self with requirments of organization being a fresher i need platform to explore  my knowledge to get into mood of corporate work culture to test my skills fpr real work enivironment and i have done some projects based on python and attended some 4 hackathons";
-  }
-  function myFunction3(){
-    document.getElementById("demo1").style.fontSize="60px";
-    document.getElementById("demo2").style.fontSize="30px";
-    document.getElementById("demo1").innerHTML= " ";
-    document.getElementById("demo2").innerHTML=
-    "I posses new and innovative idea dedication and determination to work able to adopt my self with requirments of organization being a fresher i need platform to explore  my knowledge to get into mood of corporate work culture to test my skills fpr real work enivironment and i have done some projects based on python and attended some 4 hackathons";
-  }
+var w = window.innerWidth
+|| document.documentElement.clientWidth
+|| document.body.clientWidth;
+
+var h = window.innerHeight
+|| document.documentElement.clientHeight
+|| document.body.clientHeight;
+
+var x = document.getElementById("demo");
+x.innerHTML = "Browser inner window width: " + w + ", height: " + h + ".";
 </script>
-  <div class="btn-group">
-    <ul>
-    <li><button class="button button1"  type="button" onclick="myFunction()" target="_top">About</button></li>
-    <li><button class="button button1" type="button" onclick="myFunction1()" target="_top">Education</button></li>
-    <li><button class="button button1"  type="button" onclick="myFunction2()" target="_top">Resume</button></li>
-    <li><button class="button button1" type="button" onclick="myFunction()" target="_top" >Projects</button></li>
-    <li><button class="button button1"  type="button" onclick="myFunction3()" target="_top">Achievments</button></li>
-  </ul>
-  </div>
-  <div class="row">
-    <div class="column side">
-      <img class="class1" src="http://i66.tinypic.com/4puijp.jpg">
-    </div>
-    <div class="row">
-      <div class="column middle">
-        <h1 id="demo1">Hello <br> a bit about me</h1>
-        <p id="demo2">I posses new and innovative idea dedication and determination to work able to adopt my self with requirments of organization being a fresher i need platform to explore my knowledge to get into mood of corporate work culture to test my skills fpr real work enivironment and i have done some projects based on python and attended some 4 hackathons.
-         </p>
-      </div>
+
 </body>
 </html>
